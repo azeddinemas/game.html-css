@@ -1,0 +1,169 @@
+/* start global */
+/* end global */
+body{
+    background-color: rgb(0, 0, 0);
+}
+/* start header */
+header{
+    display: flex;
+    background-color: rgba(21, 37, 189, 0.726);
+}
+
+.logo{
+    width: 10%;
+    height: 10%;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+ul{
+    display:flex;
+}
+
+ul li{
+    list-style: none;
+}
+
+ul li a{
+    text-decoration: none;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    padding: 0 30px;
+}
+
+.list :hover{
+    text-decoration-line: underline;
+}
+
+/* end header */
+
+/*start subheader*/
+span{
+    color: rgb(255, 255, 255);
+}
+ol {
+display: flex;
+}
+ol li {
+    list-style: none;
+}
+
+ol li a{
+    text-decoration: none ;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+}
+.list1 :hover{
+text-decoration-line: underline ;
+}
+/*end subheader*/
+
+/* start about section */
+
+.step4 {
+    padding-left: 20px;
+    color: rgb(0, 255, 64)
+}
+p {
+    color: rgb(255, 255, 255);
+}
+
+
+/* end about section */
+
+.content{
+    width: 181px;
+    height: 356px;
+    padding: 29px;
+    border: 2px solid rgb(0, 255, 255);
+    margin: 6px;
+    background-color:rgba(253, 253, 253, 0.479)
+    
+    }
+.photo1{
+    width: 100%;
+    height: 40%;
+}
+.content ul{
+    list-style: none;
+    display: inline;
+}
+.content ul li{
+    font-size: 18px;
+    font-weight: 700;
+    padding: 10px;
+    margin: 1px;
+}
+.content ul li a:hover{
+    text-decoration-line: underline;
+    font-size: 25px;
+    font-weight: 700;
+}
+.color-green{
+    color: rgb(255, 255, 255);
+    padding-left: 20px;
+}
+.color-gris{
+    color: rgb(255, 255, 255);
+    padding-left: 20px;
+}
+
+.step5{
+    display: flex;
+    flex-wrap: wrap;
+}
+.step5 h2{
+    color: lime;
+}
+
+/* start media tablet */
+@media (min-width: 700px) and (max-width: 991.98px) {  
+    ul li a {
+        font-size: 23px;
+        padding: 0px 19px;
+    }
+    .content {
+        width: 258px;
+        height: 350px;
+        padding: 19px;
+        margin: 18px;
+    }
+    .logo {
+        width: 10%;
+    }
+    .step5 {
+        justify-content: space-around;
+
+    }
+}
+/* end media tablet */
+
+
+/* start media mobile */
+
+@media (max-width: 700px) { 
+    ul li a {
+        font-size: 19px;
+        padding: 1px 14px;
+    }
+    ol li a {
+        font-weight: bolder;
+        padding: 12px;
+    }
+    h1 {
+        font-size: 21px;
+        margin: 0.67em 0;
+    }
+    .content {
+        width: 248px;
+        height: 367px;
+        padding: 30px;
+        margin: 52px;
+    }
+    .step5 {
+        justify-content: space-around;
+    }
+
+}
+/* end media mobile */
